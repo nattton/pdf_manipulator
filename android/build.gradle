@@ -1,4 +1,4 @@
-group 'com.deepanshuchaudhary.pdf_manipulator'
+group 'com.ttbbank.pdf_manipulator'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -33,10 +33,10 @@ apply plugin: 'kotlin-android'
 android {
     // Conditional for compatibility with AGP <4.2.
     if (project.android.hasProperty("namespace")) {
-        namespace "com.deepanshuchaudhary.pdf_manipulator"
+        namespace "com.ttbbank.pdf_manipulator"
     }
 
-    compileSdkVersion 33
+    compileSdkVersion 35
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -52,7 +52,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 26
     }
 }
 
